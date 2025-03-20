@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        bannerImg: "url('/images/bg_dark.png')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
