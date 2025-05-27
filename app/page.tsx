@@ -8,8 +8,6 @@ import Comic from "../public/images/comic/comic_end.png";
 import LinkedIn from "../public/images/buttons/linkedIn_button.png";
 import Coffee from "../public/images/buttons/BMAC_button.png";
 
-//animation
-
 function Home() {
   return (
     <div className="bg-bannerImg bg-repeat bg-bottom w-full h-screen">
