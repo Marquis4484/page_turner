@@ -1,6 +1,4 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { Carousel } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
 import Darkmode from "../public/images/buttons/Subtract.png";
