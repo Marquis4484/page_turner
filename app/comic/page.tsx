@@ -7,7 +7,7 @@ import Comic from "../../public/images/comic/comic_end.png";
 import LinkedIn from "../../public/images/buttons/linkedIn_button.png";
 import Coffee from "../../public/images/buttons/BMAC_button.png";
 
-//aadd new imports
+//add new imports
 function ComicPreview() {
   return (
     <div className="bg-black bg-repeat bg-bottom w-full h-screen">
