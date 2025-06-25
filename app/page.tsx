@@ -14,8 +14,8 @@ function Home() {
 
   const handleClick = () => {
     setIsJiggling(true);
-    setTimeout(() => setIsJiggling(false), 300); // match animation duration
   };
+
   return (
     <div className="bg-bannerImg bg-repeat bg-bottom w-full h-screen">
       <div id="comic_carousel_darkmode " className="h-[80vh]">
@@ -23,11 +23,7 @@ function Home() {
           id="button"
           className="h-[140px] w-[185px] flex items-end justify-end"
         >
-          <button
-            className={`bg-[#E3E3E3] p-3 inset-shadow-xs rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px] ${
-              isJiggling ? "animate-jiggle" : ""
-            }`}
-          >
+          <button className="bg-[#E3E3E3] p-3 inset-shadow-xs rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px]">
             <Image src={Darkmode} alt="Darkmode" className="  h-10 w-10 " />
           </button>
         </div>
@@ -44,14 +40,12 @@ function Home() {
       <div id="social_links" className="flex justify-evenly">
         <button
           onClick={handleClick}
-          className={`bg-[#D5BBA1] py-3 px-4 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  transition-transform  active:translate-y-[2px] active:translate-x-[2px] ${
-            isJiggling ? "animate-jiggle" : ""
-          }`}
+          className="bg-[#D5BBA1] py-3 px-4 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px] "
         >
           <Image src={Coffee} alt="Darkmode" className="  h-10 w-8" />
           {/* #a38f7b */}
         </button>
-        <button className="bg-[#D5BBA1] p-3 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100">
+        <button className="bg-[#D5BBA1] p-3 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px]">
           <Image src={LinkedIn} alt="Darkmode" className="h-10 w-10" />
         </button>
       </div>
