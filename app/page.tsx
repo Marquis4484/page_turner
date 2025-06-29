@@ -8,7 +8,7 @@ import Darkmode from "../public/images/buttons/Subtract.png";
 import Comic from "../public/images/comic/comic_end.png";
 import LinkedIn from "../public/images/buttons/linkedIn_button.png";
 import Coffee from "../public/images/buttons/BMAC_button.png";
-
+//context
 function Home() {
   const [isJiggling, setIsJiggling] = useState(false);
 
@@ -18,6 +18,7 @@ function Home() {
 
   return (
     <div className="bg-bannerImg bg-repeat bg-bottom w-full h-screen">
+      
       <div id="comic_carousel_darkmode " className="h-[80vh]">
         <div
           id="button"
