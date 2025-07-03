@@ -8,7 +8,7 @@ import Darkmode from "../public/images/buttons/Subtract.png";
 import Comic from "../public/images/comic/comic_end.png";
 import LinkedIn from "../public/images/buttons/linkedIn_button.png";
 import Coffee from "../public/images/buttons/BMAC_button.png";
-
+//
 function Home() {
   const [isJiggling, setIsJiggling] = useState(false);
 
