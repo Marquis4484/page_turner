@@ -18,7 +18,6 @@ function Home() {
 
   return (
     <div className="bg-bannerImg bg-repeat bg-bottom w-full h-screen">
-      
       <div id="comic_carousel_darkmode " className="h-[80vh]">
         <div
           id="button"
@@ -29,7 +28,7 @@ function Home() {
           </button>
         </div>
         <div className="flex flex-col justify-center items-center h-[80vh]">
-          <div className="w-[352px] bg-primary rounded-[20px] border-4 border-black drop-shadow-lg text-center mb-12 ">
+          <div className="w-[352px] flex-grow items-stretch bg-primary rounded-[20px] border-4 border-black drop-shadow-lg text-center mb-12 ">
             Comic Title
           </div>
           <Link href="/comic">
