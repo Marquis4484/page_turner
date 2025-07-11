@@ -9,22 +9,18 @@ import LinkedIn from "../public/images/buttons/linkedIn_button.png";
 import Coffee from "../public/images/buttons/BMAC_button.png";
 
 function Home() {
-  return ( 
-    <div id="frontpage" className="bg-bannerImg">
-      <div id="elementsOn_frontpage">
-        <div
-          id="button_position"
-          className="h-[120px] w-[165px] flex items-end justify-end"
+  return (
+    <div id="frontpage" className="bg-bannerImg flex">
+      <div id="elementsOn_frontpage" className="">
+        <button
+          id="darkmode_button"
+          className="h-[65px] w-[65px] py-3 px-4 bg-[#E3E3E3] inset-shadow-xs rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px] "
         >
-          <button
-            id="darkmode_button"
-            className="bg-[#E3E3E3] p-3 inset-shadow-xs rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px]"
-          >
-            <Image src={Darkmode} alt="Darkmode" className="h-10 w-10" />
-          </button>
-        </div>
-        <div className="flex flex-col justify-center items-center h-[800px]">
-          <div className="w-[352px] h-[500px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black drop-shadow-lg text-center mb-12 shadow-[5px_10px_8px_#4f4f4f]  ">
+          <Image src={Darkmode} alt="Darkmode" className="h-10 w-10" />
+        </button>
+
+        <div className="h-[800px]">
+          <div className="w-[352px] h-[71px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black drop-shadow-lg text-center mb-12 shadow-[5px_10px_8px_#4f4f4f]  ">
             Comic Title
           </div>
           <Link href="/comic">
