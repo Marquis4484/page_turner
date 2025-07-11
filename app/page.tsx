@@ -9,7 +9,7 @@ import LinkedIn from "../public/images/buttons/linkedIn_button.png";
 import Coffee from "../public/images/buttons/BMAC_button.png";
 
 function Home() {
-  return (
+  return ( 
     <div id="frontpage" className="bg-bannerImg">
       <div id="elementsOn_frontpage">
         <div
