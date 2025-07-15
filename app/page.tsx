@@ -10,7 +10,7 @@ import Coffee from "../public/images/buttons/BMAC_button.png";
 
 function Home() {
   return (
-    <div id="frontpage" className="bg-bannerImg flex h-screen">
+    <div id="frontpage" className="bg-bannerImg  h-screen">
       
         <button
           id="darkmode_button"
