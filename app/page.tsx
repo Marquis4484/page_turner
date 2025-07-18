@@ -16,27 +16,28 @@ function Home() {
     >
       {" "}
       {/*positioning for box in center of screen*/}
-      <div className="flex justify-center items-center h-[98vh] w-[80vw] bg-[#2981b463]">
-        <div className="absolute left-0 top-0 bottom-0 flex flex-col justify-between">
-          <button
-            id="darkmode_button"
-            className="h-[65px] w-[65px] py-3 px-4 bg-[#E3E3E3] inset-shadow-xs rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px] "
-          >
-            <Image src={Darkmode} alt="Darkmode" className="h-10 w-10" />
+      <div
+        id="buttons"
+        className="flex flex-col h-[98vh] w-[80vw] bg-[#2981b463]"
+      >
+        <button
+          id="darkmode_button"
+          className=" h-[65px] w-[65px] py-3 px-4 bg-[#E3E3E3] inset-shadow-xs rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px] "
+        >
+          <Image src={Darkmode} alt="Darkmode" className="h-10 w-10" />
+        </button>
+        <div className="flex w-[80vw]">
+          <button className="bg-[#D5BBA1] p-3 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px]">
+            <Image src={LinkedIn} alt="Darkmode" className="h-10 w-10" />
           </button>
-
-          <div className="flex w-[80vw]">
-            <button className="bg-[#D5BBA1] p-3 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px]">
-              <Image src={LinkedIn} alt="Darkmode" className="h-10 w-10" />
-            </button>
-            <button className="bg-[#D5BBA1] py-3 px-4 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px] ">
-              <Image src={Coffee} alt="Darkmode" className="  h-10 w-8" />
-              {/* #a38f7b */}
-            </button>
-          </div>
+          <button className="bg-[#D5BBA1] py-3 px-4 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px] ">
+            <Image src={Coffee} alt="Darkmode" className="  h-10 w-8" />
+            {/* #a38f7b */}
+          </button>
         </div>
-
-        <div className="flex flex-col items-center justify-center">
+      </div>
+      <div className=" flex flex-col items-center w-[80vw]">
+        <div className="flex flex-col items-center">
           <div className="w-[352px] h-[71px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black  mb-12 shadow-[5px_10px_8px_#4f4f4f]">
             Comic Title
           </div>
