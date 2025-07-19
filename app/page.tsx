@@ -18,7 +18,7 @@ function Home() {
       {/*positioning for box in center of screen*/}
       <div
         id="buttons"
-        className="flex flex-col h-[98vh] w-[80vw] bg-[#2981b463]"
+        className="flex flex-col h-[98vh] w-[80vw] bg-[#2981b463] z-3"
       >
         <button
           id="darkmode_button"
@@ -36,7 +36,7 @@ function Home() {
           </button>
         </div>
       </div>
-      <div className=" flex flex-col items-center w-[80vw]">
+      <div className=" flex flex-col items-center w-[80vw] z-2">
         <div className="flex flex-col items-center">
           <div className="w-[352px] h-[71px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black  mb-12 shadow-[5px_10px_8px_#4f4f4f]">
             Comic Title
