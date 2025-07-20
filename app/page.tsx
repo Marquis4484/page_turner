@@ -14,7 +14,7 @@ function Home() {
       id="frontpage"
       className="flex items-center justify-center bg-bannerImg h-screen"
     >
-      {" "}
+   
       {/*positioning for box in center of screen*/}
       <div
         id="buttons"
