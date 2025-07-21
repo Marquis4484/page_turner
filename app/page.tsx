@@ -24,7 +24,7 @@ function Home() {
           id="darkmode_button"
           className=" h-[65px] w-[65px] py-3 px-4 bg-[#E3E3E3] inset-shadow-xs rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px] "
         >
-          <Image src={Darkmode} alt="Darkmode" className="h-10 w-10" />
+          <Image src={Darkmode} alt="Darkmode" className="h-8 w-10" />
         </button>
         <div className="flex w-[80vw]">
           <button className="bg-[#D5BBA1] p-3 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px]">
