@@ -12,7 +12,7 @@ function Home() {
   return (
     <div
       id="frontpage"
-      className="flex items-center justify-center bg-bannerImg h-screen"
+      className="flex items-center justify-center bg-bannerImg h-screen" 
       /*positioning for box in center of screen*/
     >
       <div
