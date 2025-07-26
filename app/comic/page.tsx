@@ -10,6 +10,7 @@ import Coffee from "../../public/images/buttons/BMAC_button.png";
 //add new imports
 function ComicPreview() {
   return (
+    /*comic page start*/
     <div className="bg-black bg-repeat bg-bottom w-full h-screen">
       <div
         id="button"
