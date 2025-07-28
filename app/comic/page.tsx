@@ -16,12 +16,13 @@ function ComicPreview() {
         id="button"
         className="h-[140px] w-[185px] flex items-end justify-end"
       ></div>
-      <div className="flex flex-col justify-center items-center h-[80vh]">
-        <div className="w-64 h-16 bg-primary rounded-[20px] border-4 border-black drop-shadow-lg text-center mb-12">
+
+      <div className="flex flex-col items-center">
+        <div className="w-[332px] h-[65px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black  mb-8 shadow-[5px_10px_8px_#4f4f4f]">
           Comic Title
         </div>
         <Link href="/comic">
-          <Image src={Comic} alt="Comic" className="w-[20rem] mb-40" />
+          <Image src={Comic} alt="Comic" className="w-[17rem] mb-4" />
         </Link>
       </div>
     </div>
