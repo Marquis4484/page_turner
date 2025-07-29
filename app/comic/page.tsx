@@ -1,4 +1,6 @@
 import React from "react";
+import React from 'react';
+
 
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +10,9 @@ import LinkedIn from "../../public/images/buttons/linkedIn_button.png";
 import Coffee from "../../public/images/buttons/BMAC_button.png";
 
 //add new imports
+type Props = {
+  hidden: boolean;
+};
 function ComicPreview() {
   return (
     /*comic page start*/
