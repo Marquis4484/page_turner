@@ -30,7 +30,9 @@ function ComicPreview() {
           <Image src={Comic} alt="Comic" className="w-[17rem] mb-4" />
         </Link>
       </div>
+      
     </div>
+     /*comic page end*/
   );
 }
 
