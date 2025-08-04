@@ -17,6 +17,8 @@ export default {
         secondary: "var(--color-secondary)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        navy: "#0b1d30",
+        beige: "#f2d6b3",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
@@ -25,7 +27,7 @@ export default {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
-     
+
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
