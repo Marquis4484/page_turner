@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen bg-black text-white">
-      <Navbar hidden={hideUI} />
+      <Navbar hidden={false} onSettingsClick={() => setShowSettings(true)} />
       <Footer hidden={hideUI} />
 
       {/* Main Comic Content Area */}
