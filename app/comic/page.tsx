@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,7 +19,7 @@ export default function Home() {
 
       timeoutRef.current = setTimeout(() => {
         setHideUI(true);
-      }, 5000); // 5 seconds of inactivity
+      }, 3500); // 3.5 seconds of inactivity
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen bg-black text-white">
-      <Navbar hidden={false} onSettingsClick={() => setShowSettings(true)} />
+      <Navbar hidden={hideUI} />
       <Footer hidden={hideUI} />
 
       {/* Main Comic Content Area */}
