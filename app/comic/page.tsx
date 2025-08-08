@@ -54,7 +54,7 @@ export default function Home() {
 // };
 // function ComicPreview() {
 //   return (
-//     /*comic page start*/
+//   
 //     <div className="flex justify-center items-center bg-black bg-bottom w-full h-screen">
 //       <div className="flex flex-col items-center">
 //         <Link href="/comic">
