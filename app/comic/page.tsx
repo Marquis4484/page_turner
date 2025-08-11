@@ -19,7 +19,7 @@ export default function Home() {
 
       timeoutRef.current = setTimeout(() => {
         setHideUI(true);
-      }, 3500); // 3.5 seconds of inactivity
+      }, 3000); // 3 seconds of inactivity
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -54,7 +54,7 @@ export default function Home() {
 // };
 // function ComicPreview() {
 //   return (
-//   
+//
 //     <div className="flex justify-center items-center bg-black bg-bottom w-full h-screen">
 //       <div className="flex flex-col items-center">
 //         <Link href="/comic">
