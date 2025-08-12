@@ -6,6 +6,8 @@ import Comic from "../../public/images/comic/comic_end.png";
 import { useEffect, useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SettingsPanel from "@/components/SettingsPanel";
+import Overlay from "@/components/Overlay";
 
 export default function Home() {
   const [hideUI, setHideUI] = useState(false);
@@ -44,6 +46,9 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
+      {/* <Overlay/> */}
+      {/* <SettingsPanel /> */}
     </div>
   );
 }
