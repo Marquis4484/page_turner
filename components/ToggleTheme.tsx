@@ -3,6 +3,8 @@
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Darkmode from "../public/images/buttons/Subtract.png";
+import Light from "../public/images/buttons/wb_sunny.png";
 
 const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
@@ -20,26 +22,24 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="relative w-10 h-10 focus:outline-none"
       aria-label="Toggle dark mode"
+      className=" h-[65px] w-[65px] py-3 px-2  bg-[#E3E3E3]  rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:translate-y-[2px] active:translate-x-[2px]"
     >
       {/* Sun icon */}
+
       <Image
-        src="/sun.svg"
+        src={Light}
         alt="Light mode"
-        width={40}
-        height={40}
-        className={`absolute inset-0 transition-opacity duration-500 ${
+        className={` absolute h-12 transition-opacity duration-500 ${
           isDark ? "opacity-0" : "opacity-100"
         }`}
       />
       {/* Moon icon */}
+
       <Image
-        src="/moon.svg"
+        src={Darkmode}
         alt="Dark mode"
-        width={40}
-        height={40}
-        className={`absolute inset-0 transition-opacity duration-500 ${
+        className={` h-12 transition-opacity duration-500 ${
           isDark ? "opacity-100" : "opacity-0"
         }`}
       />

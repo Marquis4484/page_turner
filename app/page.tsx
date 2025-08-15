@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { useState } from "react";
+import { useTheme } from "next-themes";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Darkmode from "../public/images/buttons/Subtract.png";
@@ -8,26 +9,33 @@ import Light from "../public/images/buttons/wb_sunny.png";
 import Comic from "../public/images/comic/comic_end.png";
 import LinkedIn from "../public/images/buttons/linkedIn_button.png";
 import Coffee from "../public/images/buttons/BMAC_button.png";
-
+import ThemeToggle from "@/components/ToggleTheme";
 
 function Home() {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  const isDark = theme === "dark";
+
   return (
     <div
       id="frontpage"
-      className="flex items-center justify-center bg-bannerImg h-screen"
+      className={`flex items-center justify-center h-screen bg-bannerImg transition-colors duration-700 ${
+        isDark ? "bg-[#ffffff]" : "bg-[#292929]"
+      }`}
 
       /*positioning for box in center of screen*/
     >
       <div
         className="flex flex-col h-[98vh] w-[80vw]" /*position items in this box*/
       >
-        <button
-          id="darkmode_button"
-          className=" h-[65px] w-[65px] py-3 px-2  bg-[#E3E3E3]  rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:translate-y-[2px] active:translate-x-[2px]"
-        >
-          <Image src={Light} alt="Light" className="h-12  " />
-        </button>
-
+        <ThemeToggle />
         <div className="flex flex-col items-center">
           <div className="w-[332px] h-[65px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black  mb-8 shadow-[5px_10px_8px_#4f4f4f]">
             Comic Title
@@ -53,9 +61,16 @@ function Home() {
 
 export default Home;
 
-  //  <button
-  //         id="darkmode_button"
-  //         className=" h-[65px] w-[65px] py-3 px-3 bg-[#E3E3E3]  rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:translate-y-[2px] active:translate-x-[2px]"
-  //       >
-  //         <Image src={Darkmode} alt="Darkmode" className="h-10" />
-  //       </button>
+//  <button
+//         id="darkmode_button"
+//         className=" h-[65px] w-[65px] py-3 px-3 bg-[#E3E3E3]  rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:translate-y-[2px] active:translate-x-[2px]"
+//       >
+//         <Image src={Darkmode} alt="Darkmode" className="h-10" />
+//       </button>
+
+// <button
+//       id="darkmode_button"
+//       className=" h-[65px] w-[65px] py-3 px-2  bg-[#E3E3E3]  rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:translate-y-[2px] active:translate-x-[2px]"
+//     >
+//       <Image src={Light} alt="Light" className="h-12   " />
+//     </button>

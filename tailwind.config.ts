@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        bannerImg: "url('/images/bg_light.png')",
+        bannerImg: "url('/images/TransparentLight.png')",
       },
       colors: {
         primary: "var(--color-primary)",
