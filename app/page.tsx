@@ -157,13 +157,13 @@ function Home() {
       >
         <ThemeToggle />
 <div className="flex flex-col items-center">
-        <div className="w-[332px] h-[65px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black mb-8 shadow-[5px_10px_8px_#1f1f1f]">
+        <div className="w-[315px] h-[65px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black mb-8 shadow-[5px_10px_8px_#1f1f1f]">
           Comic Title
         </div>
 
         <div
           id="carousel"
-          className="relative flex items-center justify-center w-[400px] h-[500px] border-4 border-black rounded-[20px] shadow-lg overflow-hidden bg-gray-200"
+          className="relative flex items-center justify-center w-[280px] h-[450px] border-4 border-black rounded-[20px] shadow-lg overflow-hidden bg-gray-200"
         >
           {images.map((img, idx) => (
             <Image
@@ -179,7 +179,7 @@ function Home() {
           {/* Prev Button */}
           <button
             onClick={prevSlide}
-            className="absolute left-[-50px] bg-transparent"
+            className="absolute left-[-100px] bg-transparent"
           >
             <span className="text-red-600 text-6xl font-bold">{"<"}</span>
           </button>
