@@ -105,6 +105,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 import Comic1 from "../public/images/comic/comic_end.png";
 import Comic2 from "../public/images/comic/comic_page_1.png";
@@ -118,7 +119,13 @@ function Home() {
   const [mounted, setMounted] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = [Comic1, Comic2, Comic3];
+  // const images = [Comic1, Comic2, Comic3];
+
+  const images = [
+    { src: Comic1, title: "Comic One", href: "/comic1" },
+    { src: Comic2, title: "Comic Two", href: "/comic2" },
+    { src: Comic3, title: "Comic Three", href: "/comic3" },
+  ];
 
   useEffect(() => {
     setMounted(true);
@@ -157,23 +164,37 @@ function Home() {
       >
         <ThemeToggle />
 <div className="flex flex-col items-center">
-        <div className="w-[315px] h-[65px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black mb-8 shadow-[5px_10px_8px_#1f1f1f]">
-          Comic Title
+          <div className="relative w-[332px] h-[65px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black mb-8 shadow-[5px_10px_8px_#1f1f1f] overflow-hidden">
+          {images.map((img, idx) => (
+            <span
+              key={idx}
+              className={`absolute transition-opacity duration-700 ${
+                idx === currentIndex ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              {img.title}
+            </span>
+          ))}
         </div>
 
         <div
           id="carousel"
           className="relative flex items-center justify-center w-[280px] h-[450px] border-4 border-black rounded-[20px] shadow-lg overflow-hidden bg-gray-200"
         >
-          {images.map((img, idx) => (
-            <Image
+           {images.map((img, idx) => (
+            <Link
               key={idx}
-              src={img}
-              alt={`Comic ${idx + 1}`}
-              className={`absolute w-full h-full object-cover transition-opacity duration-700 ${
-                idx === currentIndex ? "opacity-100" : "opacity-0"
+              href={img.href}
+              className={`absolute w-full h-full transition-opacity duration-700 ${
+                idx === currentIndex ? "opacity-100" : "opacity-0 pointer-events-none"
               }`}
-            />
+            >
+              <Image
+                src={img.src}
+                alt={img.title}
+                className="w-full h-full object-cover"
+              />
+            </Link>
           ))}
 
           {/* Prev Button */}
