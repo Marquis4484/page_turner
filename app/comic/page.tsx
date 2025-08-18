@@ -7,10 +7,10 @@ import { useEffect, useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SettingsPanel from "@/components/SettingsPanel";
-import Overlay from "@/components/Overlay";
 
 export default function Home() {
   const [hideUI, setHideUI] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
@@ -34,8 +34,12 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen bg-black text-white">
-      <Navbar hidden={hideUI} />
+      <Navbar hidden={hideUI} onSettingsClick={() => setSettingsOpen(true)} />
       <Footer hidden={hideUI} />
+      <SettingsPanel
+        visible={settingsOpen}
+        onClose={() => setSettingsOpen(false)}
+      />
 
       {/* Main Comic Content Area */}
 
@@ -46,9 +50,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-
-      {/* <Overlay/> */}
-      {/* <SettingsPanel /> */}
     </div>
   );
 }
