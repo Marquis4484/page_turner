@@ -1,9 +1,8 @@
 "use client";
-import React from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Comic from "../../public/images/comic/comic_end.png";
-import { useEffect, useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SettingsPanel from "@/components/SettingsPanel";
@@ -12,6 +11,12 @@ export default function Home() {
   const [hideUI, setHideUI] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [img, setImg] = useState({
+    src: "/images/blue_beetle/01.png",
+    name: "01",
+    width: 640,
+    height: 900,
+  });
 
   useEffect(() => {
     const handleMouseMove = () => {
@@ -32,10 +37,55 @@ export default function Home() {
     };
   }, [hideUI]);
 
+  const IMAGE_DIR = "/images/blue_beetle"; // lives under /public
+  const IMAGE_COUNT = 10; // how many files you have
+  const EXT = "png"; // png | jpg | jpeg
+  const PAD_TO_2 = true; // true => 01, 02…; false => 1, 2…
+  const IMG_W = 640; // render width
+  const IMG_H = 900; // render height
+
+  const images = useMemo(
+    () =>
+      Array.from({ length: IMAGE_COUNT }, (_, i) => {
+        const n = PAD_TO_2 ? String(i + 1).padStart(2, "0") : String(i + 1);
+        const file = `${n}.${EXT}`;
+        return {
+          src: `${IMAGE_DIR}/${file}`,
+          name: n, // or file.replace(/\.[^.]+$/, "")
+        };
+      }),
+    [IMAGE_COUNT, IMAGE_DIR, EXT]
+  );
+
+  const [index, setIndex] = useState(0);
+  const isFirst = index === 0;
+  const isLast = index === images.length - 1;
+  const current = images[index];
+
+  const goPrev = () => !isFirst && setIndex((i) => i - 1);
+  const goNext = () => !isLast && setIndex((i) => i + 1);
+
+  // (Optional) keyboard support
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") goPrev();
+      if (e.key === "ArrowRight") goNext();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [isFirst, isLast]);
+
   return (
     <div className="relative min-h-screen bg-black text-white">
       <Navbar hidden={hideUI} onSettingsClick={() => setSettingsOpen(true)} />
-      <Footer hidden={hideUI} />
+      <Footer
+        hidden={hideUI}
+        title={current.name}
+        canPrev={!isFirst}
+        canNext={!isLast}
+        onPrev={goPrev}
+        onNext={goNext}
+      />
       <SettingsPanel
         visible={settingsOpen}
         onClose={() => setSettingsOpen(false)}
@@ -45,9 +95,13 @@ export default function Home() {
 
       <div className="flex justify-center items-center bg-black bg-bottom w-full h-screen">
         <div className="flex flex-col items-center">
-          <Link href="/comic">
-            <Image src={Comic} alt="Comic" className="w-[17rem] mb-4" />
-          </Link>
+          <Image
+            src={img.src}
+            alt={img.name}
+            width={img.width}
+            height={img.height}
+            className="object-contain mx-auto"
+          />
         </div>
       </div>
     </div>

@@ -6,7 +6,6 @@
 // import settings from "../public/images/buttons/settings.png"
 // import SettingsPanel from "./SettingsPanel";
 
-
 // type Props = {
 //   hidden: boolean;
 //   onSettingsClick: () => void;
@@ -46,7 +45,7 @@
 //           {/* #a38f7b */}
 //         </button>
 //       </div>
-      
+
 //     </nav>
 //   );
 // };
@@ -57,7 +56,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import SettingsPanel from "./SettingsPanel";
 import home from "@/public/images/buttons/home.png";
 import settings from "@/public/images/buttons/settings.png";
 
