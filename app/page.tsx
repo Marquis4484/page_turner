@@ -124,7 +124,7 @@ function Home() {
   // const images = [Comic1, Comic2, Comic3];
 
   const images = [
-    { src: Comic1, title: "Comic One", href: "/comic1" },
+    { src: Comic1, title: "Comic One", href: "/comic" },
     { src: Comic2, title: "Comic Two", href: "/comic2" },
     { src: Comic3, title: "Comic Three", href: "/comic3" },
   ];
