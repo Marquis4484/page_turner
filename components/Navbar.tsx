@@ -85,20 +85,20 @@ const Navbar: React.FC<Props> = ({ hidden, onSettingsClick }) => {
         {/* Center: Title + (optional) Highlight */}
         <div className="flex flex-col items-center gap-1">
           <h1 className="text-xl font-semibold">Comic Title</h1>
-          <button className="bg-beige px-4 py-1 rounded-lg text-black text-sm shadow-sm hover:shadow-md transition">
+          {/* <button className="bg-beige px-4 py-1 rounded-lg text-black text-sm shadow-sm hover:shadow-md transition">
             Highlight
-          </button>
+          </button> */}
         </div>
 
         {/* Right: Settings (opens SettingsPanel) */}
-        <button
+        {/* <button
           type="button"
           onClick={onSettingsClick}
           aria-label="Open settings"
           className="bg-[#D5BBA1] py-2 px-2 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f] active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100 active:translate-y-[2px] active:translate-x-[2px]"
         >
           <Image src={settings} alt="" className="h-10 w-10" />
-        </button>
+        </button> */}
       </div>
     </nav>
   );

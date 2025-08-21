@@ -107,9 +107,9 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import Comic1 from "../public/images/comic/comic_end.png";
-import Comic2 from "../public/images/comic/comic_page_1.png";
-import Comic3 from "../public/images/comic/comic_page_2.png";
+import Comic1 from "../public/images/comic_covers/comic1.png";
+import Comic2 from "../public/images/comic_covers/comic2.png";
+import Comic3 from "../public/images/comic_covers/ComingSoon.png";
 import LinkedIn from "../public/images/buttons/linkedIn_button.png";
 import Coffee from "../public/images/buttons/BMAC_button.png";
 import arrow_left from "../public/images/buttons/arrow_left.png";
@@ -124,9 +124,9 @@ function Home() {
   // const images = [Comic1, Comic2, Comic3];
 
   const images = [
-    { src: Comic1, title: "Comic One", href: "/comic" },
-    { src: Comic2, title: "Comic Two", href: "/comic2" },
-    { src: Comic3, title: "Comic Three", href: "/comic3" },
+    { src: Comic1, title: "Plastic Man!", href: "/comic" },
+    { src: Comic2, title: "The Blue Beetle!", href: "/comic2" },
+    { src: Comic3, title: "Coming Soon!", href: "/comic3" },
   ];
 
   useEffect(() => {
@@ -214,13 +214,20 @@ function Home() {
         </div>
 
         <div id="buttons" className="flex gap-12">
-          <button className="bg-[#D5BBA1] p-3 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px]">
-            <Image src={LinkedIn} alt="Darkmode" className="h-10 w-10" />
-          </button>
-          <button className="bg-[#D5BBA1] py-3 px-4 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px] ">
-            <Image src={Coffee} alt="Darkmode" className="h-10 w-8" />
-            {/* #a38f7b */}
-          </button>
+          <Link
+            href="https://www.linkedin.com/in/marquis-sampson/"
+            aria-label="Go to home"
+          >
+            <button className="bg-[#D5BBA1] p-3 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px]">
+              <Image src={LinkedIn} alt="Darkmode" className="h-10 w-10" />
+            </button>
+          </Link>
+          <Link href="https://buymeacoffee.com/marquis4484">
+            <button className="bg-[#D5BBA1] py-3 px-4 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px] ">
+              <Image src={Coffee} alt="Darkmode" className="h-10 w-8" />
+              {/* #a38f7b */}
+            </button>
+          </Link>
         </div>
       </div>
     </div>
