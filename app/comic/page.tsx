@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import Comic from "../../public/images/comic/comic_end.png";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SettingsPanel from "@/components/SettingsPanel";
@@ -14,8 +12,8 @@ export default function Home() {
   const [img, setImg] = useState({
     src: "/images/blue_beetle/01.png",
     name: "01",
-    width: 640,
-    height: 900,
+    width: 440,
+    height: 600,
   });
 
   useEffect(() => {
@@ -41,8 +39,6 @@ export default function Home() {
   const IMAGE_COUNT = 10; // how many files you have
   const EXT = "png"; // png | jpg | jpeg
   const PAD_TO_2 = true; // true => 01, 02…; false => 1, 2…
-  const IMG_W = 640; // render width
-  const IMG_H = 900; // render height
 
   const images = useMemo(
     () =>
