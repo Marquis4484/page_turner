@@ -84,7 +84,7 @@ const Navbar: React.FC<Props> = ({ hidden, onSettingsClick }) => {
 
         {/* Center: Title + (optional) Highlight */}
         <div className="flex flex-col items-center gap-1">
-          <h1 className="text-xl font-semibold">Comic Title</h1>
+          <h1 className="text-xl font-semibold">You can use the arrow keys to scroll through this comic.</h1>
           {/* <button className="bg-beige px-4 py-1 rounded-lg text-black text-sm shadow-sm hover:shadow-md transition">
             Highlight
           </button> */}

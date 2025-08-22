@@ -124,9 +124,9 @@ function Home() {
   // const images = [Comic1, Comic2, Comic3];
 
   const images = [
-    { src: Comic1, title: "Plastic Man!", href: "/comic" },
-    { src: Comic2, title: "The Blue Beetle!", href: "/comic2" },
-    { src: Comic3, title: "Coming Soon!", href: "/comic3" },
+    { src: Comic1, title: "Plastic Man!", href: "/plasticman" },
+    { src: Comic2, title: "The Blue Beetle!", href: "/bluebeetle" },
+    { src: Comic3, title: "More Coming Soon!", href: "" },
   ];
 
   useEffect(() => {
