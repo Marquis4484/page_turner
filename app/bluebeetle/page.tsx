@@ -127,9 +127,6 @@ export default function Home() {
               height={600}
               className="object-contain mx-auto"
               priority
-              onError={(e) => {
-                console.error("Image not found:", current.src);
-              }}
             />
           </Link>
         </div>
@@ -137,4 +134,3 @@ export default function Home() {
     </div>
   );
 }
-
