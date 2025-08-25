@@ -8,8 +8,10 @@ type Props = {
   hidden: boolean;
   onSettingsClick: () => void;
 };
-
-const Navbar: React.FC<Props> = ({ hidden, onSettingsClick }) => {
+{
+  /*onSettingsClick*/
+}
+const Navbar: React.FC<Props> = ({ hidden }) => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 bg-navy text-white transition-transform duration-500 ${
@@ -17,7 +19,6 @@ const Navbar: React.FC<Props> = ({ hidden, onSettingsClick }) => {
       }`}
     >
       <div className="flex justify-between items-center px-4 py-3 max-w-5xl mx-auto">
-       
         <Link href="/" aria-label="Go to home">
           <button
             type="button"
@@ -27,15 +28,15 @@ const Navbar: React.FC<Props> = ({ hidden, onSettingsClick }) => {
           </button>
         </Link>
 
-     
         <div className="flex flex-col items-center gap-1">
-          <h1 className="text-xl font-semibold">You can use the arrow keys to scroll through this comic.</h1>
+          <h1 className="text-xl font-semibold">
+            You can use the arrow keys to scroll through this comic.
+          </h1>
           {/* <button className="bg-beige px-4 py-1 rounded-lg text-black text-sm shadow-sm hover:shadow-md transition">
             Highlight
           </button> */}
         </div>
 
-        
         {/* <button
           type="button"
           onClick={onSettingsClick}
