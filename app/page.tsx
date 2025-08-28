@@ -110,20 +110,26 @@ function Home() {
         </div>
 
         <div id="buttons" className="flex gap-12">
-          <Link
+          <a
             href="https://www.linkedin.com/in/marquis-sampson/"
-            aria-label="Go to home"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <button className="bg-[#D5BBA1] p-3 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px]">
               <Image src={LinkedIn} alt="Darkmode" className="h-10 w-10" />
             </button>
-          </Link>
-          <Link href="https://buymeacoffee.com/marquis4484">
+          </a>
+
+          <a
+            href="https://buymeacoffee.com/marquis4484"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="bg-[#D5BBA1] py-3 px-4 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px] ">
               <Image src={Coffee} alt="Darkmode" className="h-10 w-8" />
               {/* #a38f7b */}
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

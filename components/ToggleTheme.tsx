@@ -7,7 +7,7 @@ import Lightmode from "../public/images/buttons/wb_sunny.png";
 
 const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(false); //prevent hydration issues 
 
   useEffect(() => {
     setMounted(true);
