@@ -156,7 +156,7 @@ function Home() {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null); //keeps interval ID alive between renders without re-rendering the component
 
   // const images = [Comic1, Comic2, Comic3];
 
