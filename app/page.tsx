@@ -175,7 +175,7 @@ function Home() {
 
   useEffect(() => {
     setMounted(true);
-    resetInterval(); // start timer when mounted
+    resetInterval(); //start timer when mounted
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
