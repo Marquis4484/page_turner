@@ -207,7 +207,7 @@ function Home() {
       <div
         className="flex flex-col h-[98vh] w-[80vw]" /*position items in this box*/
       >
-        <ThemeToggle />
+        <ThemeToggle />   {/* Button for dark and light mode */}
         <div className="flex flex-col items-center">
           <div className="relative w-[332px] h-[65px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black mb-8 shadow-[5px_10px_8px_#1f1f1f] overflow-hidden">
             {images.map((img, idx) => (
