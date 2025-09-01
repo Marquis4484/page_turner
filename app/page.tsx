@@ -205,7 +205,7 @@ function Home() {
       /*positioning for box in center of screen*/
     >
       <div
-        className="flex flex-col h-[98vh] w-[80vw]" /*position items in this box*/
+        className="flex flex-col h-[98vh] w-[80vw]"  /*position items in this box*/
       >
         <ThemeToggle />   {/* Button for dark and light mode */}
         <div className="flex flex-col items-center">
