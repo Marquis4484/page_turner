@@ -248,7 +248,7 @@ function Home() {
                 </Link>
               ))}
 
-              {/* Next Button */}
+              {/* Next Button */} 
             </div>
             <button onClick={nextSlide} className=" bg-transparent">
               <Image src={arrow_right} alt="Darkmode" className="h-20 w-14" />
