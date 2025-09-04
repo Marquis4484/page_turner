@@ -12,7 +12,7 @@
 // import arrow_right from "../public/images/buttons/arrow_right.png";
 // import ThemeToggle from "@/components/ToggleTheme";
 
-// function Home() {
+//  function Home() {
 //   const { theme } = useTheme();
 //   const [mounted, setMounted] = useState(false);
 //   const [currentIndex, setCurrentIndex] = useState(0);
