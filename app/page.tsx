@@ -1,6 +1,6 @@
 //   "use client";
 //    import React, { useState, useEffect } from "react";
-//   import Image from "next/image";
+//    import Image from "next/image";
 // import Link from "next/link";
 //  import { useTheme } from "next-themes";
 // import Comic1 from "../public/images/comic_covers/comic1.png";
