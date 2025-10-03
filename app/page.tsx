@@ -149,7 +149,7 @@ import LinkedIn from "../public/images/buttons/linkedIn_button.png";
 import Coffee from "../public/images/buttons/BMAC_button.png";
 import arrow_left from "../public/images/buttons/arrow_left.png";
 import arrow_right from "../public/images/buttons/arrow_right.png";
-import ThemeToggle from "@/components/ToggleTheme";
+import ThemeToggle from "@/components/ThemeToggle";
 
 function Home() {
   const { theme } = useTheme();
