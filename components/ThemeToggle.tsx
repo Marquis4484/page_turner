@@ -23,7 +23,7 @@ const ThemeToggle = () => {
       <button
         onClick={toggleTheme}
         aria-label="Toggle dark mode"
-        className=" h-[65px] w-[65px] py-3 px-2  bg-[#E3E3E3] rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:translate-y-[2px] active:translate-x-[2px]"
+        className=" h-[65px] w-[65px] py-3 px-2 mb-3 bg-[#E3E3E3] rounded-full duration-200  hover:bg-[#cecece] active:bg-[#9a9a9a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:translate-y-[2px] active:translate-x-[2px]"
       >
         {/* Moon */}
 

@@ -1,5 +1,3 @@
-
- 
 //   import Link from "next/link";
 //   import { useTheme } from "next-themes";
 // i mport Comic1 from "../public/images/comic_covers/comic1.png";
@@ -204,9 +202,9 @@ function Home() {
       /*positioning for box in center of screen*/
     >
       <div
-        className="flex flex-col h-[98vh] w-[80vw]"   /*position items in this box*/
+        className="flex flex-col h-[98vh] w-[80vw]" /*position items in this box*/
       >
-        <ThemeToggle />   {/* Button for dark and light mode */}
+        <ThemeToggle /> {/* Button for dark and light mode */}
         <div className="flex flex-col items-center">
           <div className="relative w-[332px] h-[65px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black mb-8 shadow-[5px_10px_8px_#1f1f1f] overflow-hidden">
             {images.map((img, idx) => (
@@ -247,14 +245,13 @@ function Home() {
                 </Link>
               ))}
 
-              {/* Next Button */} 
+              {/* Next Button */}
             </div>
             <button onClick={nextSlide} className=" bg-transparent">
               <Image src={arrow_right} alt="Darkmode" className="h-20 w-14" />
             </button>
           </div>
         </div>
-
         <div id="buttons" className="flex gap-12">
           <a
             href="https://www.linkedin.com/in/marquis-sampson/"
