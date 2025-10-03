@@ -1,4 +1,5 @@
 import React from "react";
+
 type Props = {
   hidden: boolean;
   title: string; // current image name from Home
