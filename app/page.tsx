@@ -206,7 +206,7 @@ function Home() {
       >
         <ThemeToggle /> {/* Button for dark and light mode */}
         <div className="flex flex-col items-center">
-          <div className="relative w-[332px] h-[65px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black mb-8 shadow-[5px_10px_8px_#1f1f1f] overflow-hidden">
+          <div className="relative w-[332px] h-[65px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black mb-8 shadow-[5px_10px_8px_#1f1f1f] overflow-hidden max-[480px]:w-[282px] max-[480px]:h-[55px]">
             {images.map((img, idx) => (
               <span
                 key={idx}
@@ -220,13 +220,13 @@ function Home() {
           </div>
           <div
             id="carousel"
-            className="flex items-center justify-between w-[500px] "
+            className="flex items-center justify-between w-[500px] max-[600px]:w-[350px]  "
           >
             {/* Prev Button */}
             <button onClick={prevSlide} className=" bg-transparent">
-              <Image src={arrow_left} alt="Darkmode" className="h-20 w-14" />
+              <Image src={arrow_left} alt="Darkmode" className="h-20 w-14 max-[600px]:w-12 max-[600px]:h-16" />
             </button>
-            <div className="relative flex items-center justify-center w-[280px] h-[450px] border-4 border-black rounded-[20px] shadow-lg overflow-hidden bg-gray-200">
+            <div className="relative flex items-center justify-center w-[280px] h-[450px] border-4 border-black rounded-[20px] shadow-lg overflow-hidden bg-gray-200 max-[600px]:m-2">
               {images.map((img, idx) => (
                 <Link
                   key={idx}
@@ -248,11 +248,11 @@ function Home() {
               {/* Next Button */}
             </div>
             <button onClick={nextSlide} className=" bg-transparent">
-              <Image src={arrow_right} alt="Darkmode" className="h-20 w-14" />
+              <Image src={arrow_right} alt="Darkmode" className="h-20 w-14 max-[600px]:w-12 max-[600px]:h-16" />
             </button>
           </div>
         </div>
-        <div id="buttons" className="flex gap-12">
+        <div id="buttons" className="flex gap-12 m-2">
           <a
             href="https://www.linkedin.com/in/marquis-sampson/"
             target="_blank"
