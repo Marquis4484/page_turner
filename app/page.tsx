@@ -226,7 +226,7 @@ function Home() {
             <button onClick={prevSlide} className=" bg-transparent">
               <Image src={arrow_left} alt="Darkmode" className="h-20 w-14 max-[600px]:w-12 max-[600px]:h-16" />
             </button>
-            <div className="relative flex items-center justify-center w-[280px] h-[450px] border-4 border-black rounded-[20px] shadow-lg overflow-hidden bg-gray-200 max-[600px]:m-2">
+            <div className="relative flex items-center justify-center w-[280px] h-[450px] border-4 border-black rounded-[20px] shadow-lg overflow-hidden bg-gray-200 max-[600px]:m-3">
               {images.map((img, idx) => (
                 <Link
                   key={idx}
