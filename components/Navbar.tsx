@@ -29,7 +29,7 @@ const Navbar: React.FC<Props> = ({ hidden }) => {
         </Link>
 
         <div className="flex flex-col items-center gap-1">
-          <h1 className="text-xl font-semibold">
+          <h1 className="text-xl px-10 font-semibold max-[700px]:text-[20px]">
             You can use the arrow keys to scroll through this comic.
           </h1>
           {/* <button className="bg-beige px-4 py-1 rounded-lg text-black text-sm shadow-sm hover:shadow-md transition">
