@@ -1,5 +1,4 @@
 
-//   import { useTheme } from "next-themes";
 // i mport Comic1 from "../public/images/comic_covers/comic1.png";
 // import Comic2 from "../public/images/comic_covers/comic2.png";
 // import Comic3 from "../public/images/comic_covers/ComingSoon.png";
