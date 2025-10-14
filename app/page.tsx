@@ -21,16 +21,6 @@
 //     { src: Comic3, title: "More Coming Soon!", href: "" },
 //   ];
 
-//   useEffect(() => {
-//     setMounted(true);
-
-//     // auto-slide every 5 seconds
-//     const interval = setInterval(() => {
-//       setCurrentIndex((prev) => (prev + 1) % images.length);
-//     }, 5000);
-
-//     return () => clearInterval(interval);
-//   }, []);
 
 //   if (!mounted) return null;
 
