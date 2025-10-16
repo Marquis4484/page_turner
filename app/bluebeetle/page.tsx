@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SettingsPanel from "@/components/SettingsPanel";
@@ -119,16 +118,14 @@ export default function Home() {
 
       <main className="flex justify-center items-center w-full h-screen">
         <div className="flex flex-col items-center">
-          <Link href="/comic">
-            <Image
-              src={current.src}
-              alt={current.name}
-              width={380}
-              height={600}
-              className="object-contain mx-auto"
-              priority
-            />
-          </Link>
+          <Image
+            src={current.src}
+            alt={current.name}
+            width={380}
+            height={600}
+            className="object-contain mx-auto"
+            priority
+          />
         </div>
       </main>
     </div>
