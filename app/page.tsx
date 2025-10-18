@@ -1,13 +1,5 @@
 
 
-// import Comic2 from "../public/images/comic_covers/comic2.png";
-// import Comic3 from "../public/images/comic_covers/ComingSoon.png";
-// import LinkedIn from "../public/images/buttons/linkedIn_button.png";
-// import Coffee from "../public/images/buttons/BMAC_button.png";
-// import arrow_left from "../public/images/buttons/arrow_left.png";
-// import arrow_right from "../public/images/buttons/arrow_right.png";
-// import ThemeToggle from "@/components/ToggleTheme";
-
 //  function Home() {
 //  const { theme } = useTheme();
 //   const [mounted, setMounted] = useState(false);
