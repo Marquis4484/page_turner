@@ -19,7 +19,7 @@ const Navbar: React.FC<Props> = ({ hidden }) => {
       }`}
     >
       <div className="flex justify-between items-center px-[16px] py-[12px] max-w-5xl mx-auto">
-        <Link href="/" aria-label="Go to home" className="">
+        <Link href="/" aria-label="Go to home" >
           <button className="bg-[#D5BBA1] py-[8px] px-[8px] rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f] active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100 active:translate-y-[2px] active:translate-x-[2px]">
             <Image src={home} alt="" className="h-[40px] w-[40px]" />
           </button>
