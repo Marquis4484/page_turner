@@ -87,7 +87,7 @@ export default function Home() {
   const goPrev = () => !isFirst && setIndex((i) => i - 1);
   const goNext = () => !isLast && setIndex((i) => i + 1);
 
-  // Optional: keyboard nav
+  // Keyboard Navigation
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "ArrowLeft") goPrev();
