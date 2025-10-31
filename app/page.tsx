@@ -1,7 +1,7 @@
 
 
 
-//  const { theme } = useTheme();
+
 //   const [mounted, setMounted] = useState(false);
 //   const [currentIndex, setCurrentIndex] = useState(0);
 
