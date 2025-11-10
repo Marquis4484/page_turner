@@ -71,6 +71,7 @@ export default function Home() {
     []
   );
 
+  
   const IMAGES = useMemo(
     () =>
       FILES.map((f) => ({
