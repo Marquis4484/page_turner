@@ -6,6 +6,7 @@
 /* background-image: url("/public/images/bg_dark.png");
 background-repeat: repeat; */
 
+
 @layer base {
   :root {
     --color-primary: #ffdcb8;
