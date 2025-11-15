@@ -176,7 +176,7 @@ function Home() {
       /*positioning for box in center of screen*/
     >
       <div
-        className="flex flex-col justify-between  h-[85vh] w-[80vw]" /*position items in this box*/
+        className="flex flex-col max-[600px]:self-start justify-between  h-[85vh] w-[80vw]" /*position items in this box*/
       >
         <ThemeToggle /> {/* Button for dark and light mode */}
         <div className="flex flex-col items-center"> {/* Comic Title */}
