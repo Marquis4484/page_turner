@@ -176,10 +176,10 @@ function Home() {
       /*positioning for box in center of screen*/
     >
       <div
-        className="flex flex-col justify-between  h-[98vh] w-[80vw]" /*position items in this box*/
+        className="flex flex-col justify-between  h-[85vh] w-[80vw]" /*position items in this box*/
       >
         <ThemeToggle /> {/* Button for dark and light mode */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center"> {/* Comic Title */}
           <div className="relative w-[332px] h-[65px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black mb-8 shadow-[5px_10px_8px_#1f1f1f] overflow-hidden max-[480px]:w-[282px] max-[480px]:h-[55px]">
             {images.map((img, idx) => (
               <span
