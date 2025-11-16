@@ -169,14 +169,14 @@ function Home() {
   return (
     <div
       id="frontpage"
-      className={`flex items-center justify-center h-screen bg-bannerImg2 transition-colors duration-700 ${
+      className={`flex items-center justify-center h-screen bg-bannerImg2 transition-colors duration-700 max-[600px]:overflow-hidden ${
         isDark ? "bg-[#292929]" : "bg-[#ffffff]"
       }`}
 
       /*positioning for box in center of screen*/
     >
       <div
-        className="flex flex-col max-[600px]:self-start justify-between max-[600px]:overflow-hidden h-[85vh] w-[80vw]" /*position items in this box*/
+        className="flex flex-col max-[600px]:self-start justify-between h-[85vh] w-[80vw]" /*position items in this box*/
       >
         <ThemeToggle /> {/* Button for dark and light mode */}
         <div className="flex flex-col items-center">
