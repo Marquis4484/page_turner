@@ -169,7 +169,7 @@ function Home() {
   return (
     <div
       id="frontpage"
-      className={`flex items-center justify-center h-screen bg-bannerImg2 transition-colors duration-700 max-[600px]:overflow-hidden ${
+      className={`flex items-center justify-center h-screen bg-bannerImg2 transition-colors duration-700 ${
         isDark ? "bg-[#292929]" : "bg-[#ffffff]"
       }`}
 
