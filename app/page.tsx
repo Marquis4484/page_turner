@@ -169,7 +169,7 @@ function Home() {
   return (
     <div
       id="frontpage"
-      className={`flex items-center justify-center h-screen bg-bannerImg2 transition-colors duration-700 ${
+      className={`flex items-center justify-center h-screen bg-bannerImg2 transition-colors duration-500 ${
         isDark ? "bg-[#292929]" : "bg-[#ffffff]"
       }`}
 
@@ -211,7 +211,7 @@ function Home() {
                 <Link
                   key={idx}
                   href={img.href}
-                  className={`absolute w-full h-full transition-opacity duration-700 ${
+                  className={`absolute w-full h-full transition-opacity duration-500 ${
                     idx === currentIndex
                       ? "opacity-100"
                       : "opacity-0 pointer-events-none"
