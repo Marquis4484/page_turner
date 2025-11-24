@@ -12,7 +12,8 @@ export default function Home() {
 
   
   useEffect(() => {
-    const handleMouseMove = () => {
+    const handleMouseMove = () => {  
+      
       if (hideUI) setHideUI(false);
 
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
