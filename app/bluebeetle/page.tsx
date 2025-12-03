@@ -14,7 +14,6 @@ export default function Home() {
   
   useEffect(() => {
     const handleMouseMove = () => {  
-
       
       if (hideUI) setHideUI(false);
 
