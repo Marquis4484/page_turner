@@ -16,7 +16,7 @@ const Navbar: React.FC<Props> = ({ hidden }) => {
     <nav
       className={`fixed top-0 left-0 w-full z-50 bg-navy text-white transition-transform duration-500 ${
         hidden ? "-translate-y-full pointer-events-none" : "translate-y-0"
-      }`}
+      }`} 
     >
       <div className="flex justify-between items-center px-[16px] py-[12px] max-w-5xl mx-auto">
         <Link href="/" className="max-[700px]:items-center" aria-label="Go to home" >
