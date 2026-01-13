@@ -6,7 +6,8 @@ import home from "@/public/images/buttons/home.png";
 
 type Props = {
   hidden: boolean;
-  onSettingsClick: () => void;
+  onSettingsClick: () => void; 
+ 
 };
 {
   /*onSettingsClick*/ 
