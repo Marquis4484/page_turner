@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import home from "@/public/images/buttons/home.png";
-// import settings from "@/public/images/buttons/settings.png";
+// import settings from "@/public/images/buttons/settings.png"; 
 
 type Props = {
   hidden: boolean;
