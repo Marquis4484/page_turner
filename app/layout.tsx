@@ -30,7 +30,7 @@ export default function RootLayout({
         className={` max-[600px]:overflow-hidden  ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class">
-          {children}
+          {children} 
           <Analytics />
         </ThemeProvider>
       </body>
