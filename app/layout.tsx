@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Page_Turner",
-  description: "A Comic Book Web Application",
+  description: "A Comic Book Web Application", 
 };
 
 export default function RootLayout({
