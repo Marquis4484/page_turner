@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Page_Turner",
+  title: "Page_Turner", 
   description: "A Comic Book Web Application", 
 };
 
