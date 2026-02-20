@@ -8,7 +8,7 @@ import SettingsPanel from "@/components/SettingsPanel";
 
 export default function Home() {
    
-  const [hideUI, setHideUI] = useState(false);
+  const [hideUI, setHideUI] = useState(false); 
   const [settingsOpen, setSettingsOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
