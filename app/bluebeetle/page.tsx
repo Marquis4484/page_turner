@@ -13,7 +13,7 @@ export default function Home() {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   
-  useEffect(() => {
+  useEffect(() => { 
     const handleMouseMove = () => {  
       
       if (hideUI) setHideUI(false);
