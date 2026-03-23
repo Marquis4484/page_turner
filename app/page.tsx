@@ -111,7 +111,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next/link"; 
 import { useTheme } from "next-themes";
 import Comic1 from "../public/images/comic_covers/comic1.png";
 import Comic2 from "../public/images/comic_covers/comic2.png";
@@ -161,7 +161,7 @@ function Home() {
     resetInterval();
   };
 
-  const prevSlide = () => {
+  const prevSlide = () => { 
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
     resetInterval();
   };
