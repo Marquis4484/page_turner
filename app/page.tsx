@@ -163,7 +163,7 @@ function Home() {
 
   const prevSlide = () => { 
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-    resetInterval();
+    resetInterval(); 
   };
 
   return (
