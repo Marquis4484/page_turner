@@ -1,12 +1,12 @@
 "use client";
 import React, { useEffect, useMemo, useRef, useState } from "react"; 
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar"; 
 import Footer from "@/components/Footer";   
-import SettingsPanel from "@/components/SettingsPanel";
+import SettingsPanel from "@/components/SettingsPanel"; 
 
 
-export default function Home() { 
+export default function Home() {  
    
   const [hideUI, setHideUI] = useState(false);  
   const [settingsOpen, setSettingsOpen] = useState(false);
