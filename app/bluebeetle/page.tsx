@@ -33,7 +33,7 @@ export default function Home() {
     };
   }, [hideUI]);
 
-  const DIR = "/images/blue_beetle";
+  const DIR = "/images/blue_beetle"; 
   const FILES = useMemo(
     () => [
       "1BBTitle_Page.png",
