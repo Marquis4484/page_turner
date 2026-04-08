@@ -119,7 +119,7 @@ export default function Home() {
         onClose={() => setSettingsOpen(false)}
       />
 
-      {/* Main Comic Content Area */}
+      {/* Main Comic Area */} 
 
       <main className="flex justify-center items-center w-full h-screen">
         <div className="flex flex-col items-center">
