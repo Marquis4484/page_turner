@@ -20,7 +20,7 @@ export default function Home() {
 
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
 
-      timeoutRef.current = setTimeout(() => {
+      timeoutRef.current = setTimeout(() => { 
         setHideUI(true);
       }, 3000); // 3 seconds of inactivity
     };
