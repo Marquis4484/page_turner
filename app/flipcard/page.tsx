@@ -7,7 +7,7 @@ export default function Home() {
       <FlipCard
         frontSrc="/cards/front.jpg"
         backSrc="/cards/back.jpg"
-        width={360}
+        width={360} 
         height={220}
         roundedClass="rounded-2xl"
         className="hover:scale-[1.02] transition-transform duration-200"
