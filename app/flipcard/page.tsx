@@ -9,7 +9,7 @@ export default function Home() {
         frontSrc="/cards/front.jpg"
         backSrc="/cards/back.jpg"
         width={380} 
-        height={220}
+        height={240}
         roundedClass="rounded-2xl"
         className="hover:scale-[1.02] transition-transform duration-200"
       />
