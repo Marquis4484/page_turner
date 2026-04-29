@@ -1,6 +1,7 @@
 // app/page.tsx (Next.js App Router)
 import FlipCard from "@/components/FlipCard";
 
+
 export default function Home() {
 
   return (
