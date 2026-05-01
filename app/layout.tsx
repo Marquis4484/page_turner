@@ -29,10 +29,11 @@ export default function RootLayout({
       <body
         className={` max-[600px]:overflow-hidden  ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        
+
         <ThemeProvider attribute="class">
           {children}  
           <Analytics /> 
+          
         </ThemeProvider>
       </body>
     </html>
