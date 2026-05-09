@@ -19,8 +19,6 @@ export const metadata: Metadata = {
   description: "A Comic  Book Web Application", 
 };
 
-
-
 export default function RootLayout({
   children, 
 }: Readonly<{
