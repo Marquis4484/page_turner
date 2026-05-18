@@ -8,7 +8,6 @@ type Props = {
   hidden: boolean;
   onSettingsClick: () => void; 
   
-
 };
 {
   /*onSettingsClick*/ 
