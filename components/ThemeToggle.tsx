@@ -10,6 +10,7 @@ const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false); //prevent hydration issues 
 
+  
   useEffect(() => {
     setMounted(true);
   }, []);
