@@ -10,6 +10,7 @@ type Props = {
 };
 
 const Footer: React.FC<Props> = ({
+  
   hidden,
   title,
   canPrev,
