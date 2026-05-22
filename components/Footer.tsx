@@ -10,7 +10,7 @@ type Props = {
 };
 
 const Footer: React.FC<Props> = ({
-  
+
   hidden,
   title,
   canPrev,
@@ -21,6 +21,7 @@ const Footer: React.FC<Props> = ({
   return (
     <footer
       className={`fixed bottom-0 left-0 w-full z-50 bg-navy text-white transition-transform duration-500 ${
+        
         hidden ? "translate-y-full" : "translate-y-0"
       }`}
     >
