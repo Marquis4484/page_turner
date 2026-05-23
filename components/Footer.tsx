@@ -21,7 +21,7 @@ const Footer: React.FC<Props> = ({
   return (
     <footer
       className={`fixed bottom-0 left-0 w-full z-50 bg-navy text-white transition-transform duration-500 ${
-        
+
         hidden ? "translate-y-full" : "translate-y-0"
       }`}
     >
@@ -46,6 +46,7 @@ const Footer: React.FC<Props> = ({
 
           {/* Right Arrow */}
           <button
+          
             type="button"
             onClick={onNext}
             aria-label="Next image"
