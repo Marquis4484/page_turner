@@ -39,14 +39,14 @@ const Footer: React.FC<Props> = ({
             &#8249;
           </button>
 
-          {/* Dynamic title */}
+          {/* Dynamic Title */}
           <div className="text-center select-none">
             <span className="text-lg font-medium tracking-wide">{title}</span>
           </div>
 
           {/* Right Arrow */}
           <button
-          
+
             type="button"
             onClick={onNext}
             aria-label="Next image"
