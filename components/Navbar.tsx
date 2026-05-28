@@ -9,8 +9,10 @@ type Props = {
   onSettingsClick: () => void; 
   
 };
+
 {
-  /*onSettingsClick*/ 
+  /*onSettingsClick*/
+   
 }
 const Navbar: React.FC<Props> = ({ hidden }) => {
   return (
