@@ -27,6 +27,7 @@ const Navbar: React.FC<Props> = ({ hidden }) => {
             <Image src={home} alt="" className="h-[40px] w-[40px]" />
           </button>
         </Link>
+        
 
         <div className="flex flex-col items-center gap-1 max-[700px]:w-[350px]">
           <h1 className="text-xl px-10 font-semibold max-[700px]:hidden"> 
