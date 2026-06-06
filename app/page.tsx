@@ -102,11 +102,7 @@
 //               <Image src={Coffee} alt="Darkmode" className="h-10 w-8" />
 //               {/* #a38f7b */}
 //             </button>
-//           </a>
-//         </div>
-//       </div>
-//     </div>
-//   );
+
 
 "use client";
 import { useState, useEffect, useRef } from "react";
