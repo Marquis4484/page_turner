@@ -1,13 +1,4 @@
-//   const [mounted, setMounted] = useState(false);
-//   const [currentIndex, setCurrentIndex] = useState(0);
 
-//   // const images = [Comic1, Comic2, Comic3];
-
-//   const images = [
-//     { src: Comic1, title: "Plastic Man!", href: "/plasticman" },
-//     { src: Comic2, title: "The Blue Beetle!", href: "/bluebeetle" },
-//     { src: Comic3, title: "More Coming Soon!", href: "" },
-//   ];
 
 //   if (!mounted) return null;
 
