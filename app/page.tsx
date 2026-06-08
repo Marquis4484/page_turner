@@ -1,24 +1,5 @@
 
 
-//   if (!mounted) return null;
-
-//   const isDark = theme === "dark";
-
-//   const nextSlide = () => {
-//     setCurrentIndex((prev) => (prev + 1) % images.length);
-//   };
-
-//   const prevSlide = () => {
-//     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-//   };
-
-//   return (
-//     <div
-//       id="frontpage"
-//       className={`flex items-center justify-center h-screen bg-bannerImg2 transition-colors duration-700 ${
-//         isDark ? "bg-[#292929]" : "bg-[#ffffff]"
-//       }`}
-
 //       /*positioning for box in center of screen*/
 //     >
 //       <div
