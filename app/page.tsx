@@ -1,15 +1,4 @@
 
-
-//       /*positioning for box in center of screen*/
-//     >
-//       <div
-//         className="flex flex-col h-[98vh] w-[80vw]" /*position items in this box*/
-//       >
-//         <ThemeToggle />
-//         <div className="flex flex-col items-center">
-//           <div className="relative w-[332px] h-[65px] flex items-center justify-center bg-primary rounded-[20px] border-4 border-black mb-8 shadow-[5px_10px_8px_#1f1f1f] overflow-hidden">
-//             {images.map((img, idx) => (
-//               <span
 //                 key={idx}
 //                 className={`absolute transition-opacity duration-700 text-[26px] ${
 //                   idx === currentIndex ? "opacity-100" : "opacity-0"
