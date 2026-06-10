@@ -1,21 +1,4 @@
 
-//                 key={idx}
-//                 className={`absolute transition-opacity duration-700 text-[26px] ${
-//                   idx === currentIndex ? "opacity-100" : "opacity-0"
-//                 }`}
-//               >
-//                 {img.title}
-//               </span>
-//             ))}
-//           </div>
-//           <div
-//             id="carousel"
-//             className="flex items-center justify-between w-[500px] "
-//           >
-//             {/* Prev Button */}
-//             <button onClick={prevSlide} className=" bg-transparent">
-//               <Image src={arrow_left} alt="Darkmode" className="h-20 w-14" />
-//             </button>
 //             <div className="relative flex items-center justify-center w-[280px] h-[450px] border-4 border-black rounded-[20px] shadow-lg overflow-hidden bg-gray-200">
 //               {images.map((img, idx) => (
 //                 <Link
