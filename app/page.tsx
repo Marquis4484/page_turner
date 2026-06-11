@@ -1,7 +1,4 @@
 
-//             <div className="relative flex items-center justify-center w-[280px] h-[450px] border-4 border-black rounded-[20px] shadow-lg overflow-hidden bg-gray-200">
-//               {images.map((img, idx) => (
-//                 <Link
 //                   key={idx}
 //                   href={img.href}
 //                   className={`absolute w-full h-full transition-opacity duration-700 ${
