@@ -1,19 +1,5 @@
 
-//                   key={idx}
-//                   href={img.href}
-//                   className={`absolute w-full h-full transition-opacity duration-700 ${
-//                     idx === currentIndex
-//                       ? "opacity-100"
-//                       : "opacity-0 pointer-events-none"
-//                   }`}
-//                 >
-//                   <Image
-//                     src={img.src}
-//                     alt={img.title}
-//                     className="w-full h-full object-cover"
-//                   />
-//                 </Link>
-//               ))}
+
 
 //               {/* Next Button */}
 //             </div>
