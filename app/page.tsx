@@ -1,15 +1,5 @@
 
 
-
-
-//         <div id="buttons" className="flex gap-12">
-//           <a
-//             href="https://www.linkedin.com/in/marquis-sampson/"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <button className="bg-[#D5BBA1] p-3 rounded-full duration-200 hover:bg-[#b7a08a] shadow-[3px_5px_0px_#4f4f4f]  active:shadow-[0px_0px_0px_#4f4f4f] active:duration-100  active:translate-y-[2px] active:translate-x-[2px]">
-//               <Image src={LinkedIn} alt="Darkmode" className="h-10 w-10" />
 //             </button>
 //           </a>
 
