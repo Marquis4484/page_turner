@@ -1,5 +1,5 @@
 import FlipCard from "@/components/FlipCard";
-
+ 
 export default function Home() {
 
   return (
