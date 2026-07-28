@@ -8,7 +8,7 @@ type Props = {
   onPrev: () => void; // wired to left arrow
   onNext: () => void; // wired to right arrow
 };
-
+ 
 const Footer: React.FC<Props> = ({
 
   hidden,
