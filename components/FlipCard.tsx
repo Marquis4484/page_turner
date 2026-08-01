@@ -100,7 +100,7 @@ export default function FlipCard({
   );
 }
 
-/** Hook: prefers-reduced-motion media query */
+
 function usePrefersReducedMotion() {
   const [reduced, setReduced] = React.useState(false);
   React.useEffect(() => {
