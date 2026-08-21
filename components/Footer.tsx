@@ -55,7 +55,7 @@ const Footer: React.FC<Props> = ({
               canNext ? "opacity-100" : "opacity-0 pointer-events-none"
             }`}
           >
-            &#8250;  {/* arrow   */}
+            &#8250;  {/* arrow sign */}
           </button>
         </div>
       </div>
