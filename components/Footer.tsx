@@ -54,7 +54,7 @@ const Footer: React.FC<Props> = ({
             className={`h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-2xl transition-opacity duration-300 ${
               canNext ? "opacity-100" : "opacity-0 pointer-events-none"
             }`}
-          >
+          > 
             &#8250;  {/* arrow sign */}
           </button>
         </div>
