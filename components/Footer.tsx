@@ -7,6 +7,7 @@ type Props = {
   canNext: boolean; // Home decides if we can go right
   onPrev: () => void; // wired to left arrow
   onNext: () => void; // wired to right arrow
+  
 };
  
 const Footer: React.FC<Props> = ({
