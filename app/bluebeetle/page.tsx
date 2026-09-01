@@ -17,6 +17,7 @@ export default function Home() {
     const handleMouseMove = () => {  
       
       
+      
       if (hideUI) setHideUI (false);
 
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
