@@ -17,7 +17,7 @@ export default function Home() {
     const handleMouseMove = () => {  
       
       
-      
+
       if (hideUI) setHideUI (false);
 
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -27,7 +27,7 @@ export default function Home() {
         setHideUI(true);
       }, 3000); // 3 seconds of inactivity
     };
-
+ 
     window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
