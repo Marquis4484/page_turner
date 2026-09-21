@@ -1,5 +1,6 @@
 import React from "react";
 
+
 type Props = {
   hidden: boolean;
   title: string; // current image name from Home
@@ -8,7 +9,7 @@ type Props = {
   onPrev: () => void; // wired to left arrow
   onNext: () => void; // wired to right arrow
 
-  
+
 };
   
 
