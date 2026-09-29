@@ -12,6 +12,7 @@ type Props = {
   
 };
 {
+  
   /*onSettingsClick*/
 }
 const Navbar: React.FC<Props> = ({ hidden }) => {
