@@ -9,10 +9,9 @@ type Props = {
   hidden: boolean;
   onSettingsClick: () => void; 
   
-  
 };
 {
-  
+
   /*onSettingsClick*/
 }
 const Navbar: React.FC<Props> = ({ hidden }) => {
