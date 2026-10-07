@@ -12,9 +12,8 @@ export default function Home() {
         roundedClass="rounded-2xl"
         className="hover:scale-[1.02] transition-transform duration-200"
       />
-        
 
-        
+
     </main>
   );
 }
