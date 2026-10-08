@@ -40,6 +40,7 @@ function Home() {
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
+    
   }, []);
 
   if (!mounted) return null;
