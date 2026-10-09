@@ -46,7 +46,6 @@ function Home() {
   if (!mounted) return null;
 
   const isDark = theme === "dark";
-
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);
     resetInterval();
