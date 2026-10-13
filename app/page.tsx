@@ -11,6 +11,7 @@ import Coffee from "../public/images/buttons/BMAC_button.png";
 import arrow_left from "../public/images/buttons/arrow_left.png";
 import arrow_right from "../public/images/buttons/arrow_right.png";
 import ThemeToggle from "@/components/ThemeToggle";
+import MusicToggle from "@/components/MusicToggle";
 
 function Home() {
   const { theme } = useTheme();
@@ -68,7 +69,10 @@ function Home() {
       <div
         className="flex flex-col max-[600px]:self-start justify-between h-[85vh] w-[80vw]" /*position items in this box*/
       >
-        <ThemeToggle /> {/* Button for dark and light mode */}
+        <div className="flex gap-4">
+          <ThemeToggle /> {/* Button for dark and light mode */}
+          <MusicToggle /> {/* Button for background music */}
+        </div>
         <div className="flex flex-col items-center">
           
           {/* Comic Title */}
