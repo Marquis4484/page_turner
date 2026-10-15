@@ -26,6 +26,8 @@ function Home() {
     { src: Comic2, title: "The Blue Beetle!", href: "/bluebeetle" },
     { src: Comic3, title: "More Coming Soon!", href: "" },
     // { src: Comic3, title: "FlipCard", href: "/flipcard" } 
+
+
   ];
 
   const resetInterval = () => {
@@ -33,6 +35,7 @@ function Home() {
     intervalRef.current = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
     }, 5000);
+    
   };
 
   useEffect(() => {
