@@ -21,6 +21,8 @@ const MusicToggle = () => {
       audio.pause();
       setPlaying(false);
     } else {
+
+      
       try {
         await audio.play(); //browsers only allow this after a click
         setPlaying(true);
