@@ -24,6 +24,7 @@ const MusicToggle = () => {
 
       
       try {
+      
         await audio.play(); //browsers only allow this after a click
         setPlaying(true);
       } catch {
