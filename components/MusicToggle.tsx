@@ -15,6 +15,7 @@ const MusicToggle = () => {
   }, []);
 
   const toggleMusic = async () => {
+    
     const audio = audioRef.current;
     if (!audio) return;
     if (playing) {
