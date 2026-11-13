@@ -6,6 +6,8 @@ const MusicToggle = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null); //keeps the same audio object between renders
   const [playing, setPlaying] = useState(false);
 
+
+  
   useEffect(() => {
     const audio = new Audio("/audio/home-theme.mp3");
     audio.loop = true;
@@ -16,6 +18,7 @@ const MusicToggle = () => {
 
   const toggleMusic = async () => {
     
+
     const audio = audioRef.current;
     if (!audio) return;
     if (playing) {
